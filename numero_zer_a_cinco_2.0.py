@@ -1,0 +1,14 @@
+from random import randint
+from time import sleep
+r = randint(0,5)
+print("\nVamos ver se você consegue acertar o número que eu estou pensando! \nVou te dar uma dica: é um número de 0 à 5.")
+n = int(input("Digite seu número pensado aqui: "))
+
+print("PROCESSANDO...")
+sleep(3)
+
+print("\nMeu número escolhido foi {}!".format(r))
+if n == r:
+    print("Parabéns, você acertou!")
+else:
+    print("Que pena, você errou!")
